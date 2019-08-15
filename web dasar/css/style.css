@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('../font/kaushanscript-regular-webfont.woff') format('woff'),
+        url('../font/kaushanscript-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'roboto-black';
+    src: url('../font/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body{
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #ccc;
+}
+
+/* Global */
+.container{
+    z-index: 99999;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.current {
+    color: #e8491d;
+    font-weight: bold;
+}
+/* Header */
+header{
+    justify-content: center;
+    background: #534e4e;
+    color: #fff;
+    min-height: 70px;
+    border-bottom: 3px solid #e8491d;
+    box-shadow:  10px 5px #aaaaaa;
+    position: relative;
+    width:100%;
+}
+
+
+
+header #main-thumb {
+    float: left;
+    margin-top: 5px;
+}
+header #main-thumb img{
+    width: 92px;
+    border-radius: 50%;
+    border: 2px solid #cecece;
+    float: left;
+}
+header p{
+    font-family: "kaushan_scriptregular", arial;
+
+    font-size: 30px;
+    float: left;
+    line-height: 30px;
+    margin: 20px 10px;
+    text-shadow: 0  2px 10px  #123;
+}
+header nav{
+    float: right;
+    margin-top: 60px;
+
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+
+.part1{
+      /* Menggunakan Gambar */
+      background-image: url("../img/komputer.jpg");
+
+      /* mengatur ukuran  */
+      min-height: 500px; 
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 100px;
+}
+
+
+section .part1 .box {
+    position: cover;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    width: 800px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 50px;
+    color:#e8491d;
+    box-shadow: 0 0 20px 0 rgb(249, 251, 231);
+    border-radius: 0 0 20% 0;
+    letter-spacing: 10px;
+}
+section .part1 .writing h1:nth-child(2){
+    font-size: 70px;
+}
+section .part1 .box .writing{
+    padding-top: 40px;
+    font-family: 'roboto-black';
+	color: #e8491d;
+	text-shadow:
+		    0 1px #808d93,
+		    -1px 0 #cdd2d5,
+		    -1px 2px #808d93,
+		    -2px 1px #cdd2d5,
+		    -2px 3px #808d93,
+            -3px 2px #cdd2d5;
+    font-weight: bold;
+}
+
+section .part1 .box .writing #center-button{
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #534e4e;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+section .part1 .box .writing #center-button:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+section .part2{
+    height:700px;
+    background-color:#534e4e;
+}
+section .part2 .col1 h1{
+    padding-top: 20px;
+    font-size:40px;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    color: rgb(243, 243, 243);
+    text-shadow: 0 1px 0 #ccc,
+                  0 2px 0 #c9c9c9,
+                  0 3px 0 #bbb,
+                  0 4px 0 #b9b9b9;
+                }
+section .part2 .col1 #line{
+    width: 50%;
+    height: 5px;
+    background-color: rgb(134, 131, 123);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    border: none;
+}
+section .part2 .col2 .row1{
+    float: left;
+    width: 40%;
+    height: 500px;
+    margin-top: 40px;
+
+}
+
+section .part2 .col2 .row1 img{
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: auto;
+    box-shadow: 0 0 20px rgba(0,0,0, .5);
+    border-radius:  25% 0 25% 0;
+}
+section .part2 .col2 .row2{
+    margin-top: 40px;
+    float: right;
+    width: 60%;
+    height: 500px;
+}
+section .row2 .personalinfo  ul{
+    padding-top: 30px;
+}
+section .row2 .personalinfo  li{
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    display: inline;
+    margin: 20px;
+    background-color: #fff;
+    padding: 0 2px 0 2px;
+}
+section .part2 .col2 .row2 .personalinfo ul span img{
+    display: inline;
+    background-color: transparent;
+}
+section .personalinfo{
+    margin-right: 50px;
+}
+
+@media (max-width : 1200px){
+    section .part2 .col2 .row1 img{
+    margin-left: 0;
+
+    }
+}
+
+
+
+    footer{
+        padding: 20px;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #e8491d;
+        text-align: center;
+        font-weight: bold;
+        font-family: arial;
+    }

@@ -1,0 +1,35 @@
+.listGambar{
+    border: 2px solid #cecece;
+    padding-top: 50px;
+    margin: auto;
+    width: 1200px;
+    height: 500px;
+    text-align: center;
+    box-shadow:  5px 5px  #aaaaaa;
+
+}
+.listGambar img{
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid aliceblue;
+    background-color: #fff;
+}
+
+.listGambar img:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+.info{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+    font-size: 20px;
+    font-family: 'roboto-black';
+    background: #666;
+    color: #222;
+    text-shadow: 0 1px 1px white;
+}

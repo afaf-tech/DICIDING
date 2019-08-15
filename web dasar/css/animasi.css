@@ -1,0 +1,80 @@
+/* Navigasi */
+header a:hover{
+    color: #ccc;
+    font-weight: bold;
+}
+header .container nav li{
+    display: inline;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+header .container nav li  a{
+    overflow: hidden;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 0 40px rgba(0,0,0, .5);
+    position: relative;
+    overflow: hidden;
+}
+
+header .container nav li  a span{
+
+    position: absolute;
+    background: #03a9fa;
+    opacity: .5;
+    }
+    header .container nav li  a span:nth-child(1)
+    {
+        bottom: 0 ;
+        left: 0;
+        width: 2px;
+        height: 50%;
+        transform: translateY(0);
+    }
+    header .container nav li  a:hover span:nth-child(1){
+        transition: .5s;
+        transform: translateY(-100%);
+    }
+    
+    header .container nav li  a span:nth-child(2)
+    {
+        top: 0 ;
+        left: 50%;
+        width: 50%;
+        height: 2px;
+        transform: translateX(-100%);
+    }
+    header .container nav li  a:hover span:nth-child(2)
+    {
+        transition: .75s;
+        transform: translateX(0);
+        transition-delay: 0.25s;
+    }
+    header .container nav li  a span:nth-child(3)
+    {
+        top: 50% ;
+        right: 0;
+        width: 2px;
+        height: 50%;
+        transform: translateY(-100%);
+    }
+    header .container nav li  a:hover span:nth-child(3){
+        transition: .5s;
+        transform: translateY(0);
+        transition-delay: .5s;
+    }
+    
+    header .container nav li  a span:nth-child(4)
+    {
+        bottom: 0 ;
+        right: 0;
+        width: 50%;
+        height: 2px;
+        transform: translateX(0);
+    }
+    header .container nav li  a:hover span:nth-child(4){
+        transition: .5s;
+        transform: translateX(-100%);
+        transition-delay: .75s;
+    }
+
